@@ -40,6 +40,7 @@ public class CreateServlet extends HttpServlet {
             Task_list t = new Task_list();
 
             String content = request.getParameter("content");
+            System.out.println("＠＠＠＠＠　"+content+"＠＠＠＠＠　");
             t.setContent(content);
 
             Timestamp currentTime = new Timestamp(System.currentTimeMillis());
